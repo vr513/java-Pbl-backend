@@ -1,16 +1,25 @@
 package com.javapbl.studentcourses.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Course {
 
+    @Id
     private long id;
     private String title;
     private String Description;
 
     public Course(long id, String title, String Description) {
-        super();
+
         this.setTitle(title);
         this.setId(id);
         this.setDescription(Description);
+    }
+
+    public Course() {
+        super();
     }
 
     public String getDescription() {
