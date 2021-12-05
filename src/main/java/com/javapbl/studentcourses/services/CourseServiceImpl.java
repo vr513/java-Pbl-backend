@@ -40,13 +40,14 @@ public class CourseServiceImpl implements CourseService {
         // }
         // }
         // return courseDao.getById(courseId);
-        return courseDao.getOne(courseId);
+        return courseDao.getById(courseId);
+        // return courseDao.findAll();
 
     }
 
     @Override
     public Course addCourse(Course course) {
-        list.add(course);
+        // list.add(course);
 
         courseDao.save(course);
         return course;
