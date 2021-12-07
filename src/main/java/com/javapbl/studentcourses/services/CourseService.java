@@ -15,4 +15,6 @@ public interface CourseService {
     public Course updateCourse(Course course);
 
     public String deleteCourse(Long courseId);
+
+    public String deleteAllCourses();
 }

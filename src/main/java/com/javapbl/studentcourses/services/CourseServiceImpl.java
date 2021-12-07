@@ -83,4 +83,12 @@ public class CourseServiceImpl implements CourseService {
         courseDao.delete(entity);
         return returnMessage;
     }
+
+    @Override
+    public String deleteAllCourses() {
+        String returnMessage = null;
+        courseDao.deleteAll();
+        returnMessage = "Successfully Removed";
+        return returnMessage;
+    }
 }
